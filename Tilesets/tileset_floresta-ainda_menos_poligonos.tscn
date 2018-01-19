@@ -1,0 +1,698 @@
+[gd_scene load_steps=29 format=2]
+
+[ext_resource path="res://Textures/tileset.png" type="Texture" id=1]
+
+[sub_resource type="SegmentShape2D" id=1]
+
+custom_solver_bias = 0.0
+a = Vector2( -39, -31 )
+b = Vector2( -39, 63 )
+
+[sub_resource type="SegmentShape2D" id=2]
+
+custom_solver_bias = 0.0
+a = Vector2( -40, -32 )
+b = Vector2( 47, -32 )
+
+[sub_resource type="SegmentShape2D" id=3]
+
+custom_solver_bias = 0.0
+a = Vector2( -46, -35 )
+b = Vector2( 48, -35 )
+
+[sub_resource type="SegmentShape2D" id=4]
+
+custom_solver_bias = 0.0
+a = Vector2( -48, -35 )
+b = Vector2( 44, -35 )
+
+[sub_resource type="SegmentShape2D" id=5]
+
+custom_solver_bias = 0.0
+a = Vector2( -43, -35 )
+b = Vector2( 41, -35 )
+
+[sub_resource type="SegmentShape2D" id=6]
+
+custom_solver_bias = 0.0
+a = Vector2( 35, -31 )
+b = Vector2( 35, 66 )
+
+[sub_resource type="SegmentShape2D" id=7]
+
+custom_solver_bias = 0.0
+a = Vector2( -39, -31 )
+b = Vector2( -39, 53 )
+
+[sub_resource type="SegmentShape2D" id=8]
+
+custom_solver_bias = 0.0
+a = Vector2( -39, -32 )
+b = Vector2( 47, -32 )
+
+[sub_resource type="SegmentShape2D" id=9]
+
+custom_solver_bias = 0.0
+a = Vector2( -52, -32 )
+b = Vector2( 50, -32 )
+
+[sub_resource type="SegmentShape2D" id=10]
+
+custom_solver_bias = 0.0
+a = Vector2( -50, -32 )
+b = Vector2( 34, -32 )
+
+[sub_resource type="SegmentShape2D" id=11]
+
+custom_solver_bias = 0.0
+a = Vector2( 39, -30 )
+b = Vector2( 39, 58 )
+
+[sub_resource type="SegmentShape2D" id=12]
+
+custom_solver_bias = 0.0
+a = Vector2( -5, -53 )
+b = Vector2( -5, 60 )
+
+[sub_resource type="SegmentShape2D" id=13]
+
+custom_solver_bias = 0.0
+a = Vector2( 3, -49 )
+b = Vector2( 3, 64 )
+
+[sub_resource type="StreamTexture" id=14]
+
+load_path = "res://.import/tileset.png-640a0fc2441bef186ecfbbbdb75dce01.stex"
+
+[sub_resource type="SegmentShape2D" id=15]
+
+custom_solver_bias = 0.0
+a = Vector2( -5, -38 )
+b = Vector2( -5, 47 )
+
+[sub_resource type="SegmentShape2D" id=16]
+
+custom_solver_bias = 0.0
+a = Vector2( -14, 0 )
+b = Vector2( 80, 1 )
+
+[sub_resource type="SegmentShape2D" id=17]
+
+custom_solver_bias = 0.0
+a = Vector2( -56, 9 )
+b = Vector2( 57, 9 )
+
+[sub_resource type="SegmentShape2D" id=18]
+
+custom_solver_bias = 0.0
+a = Vector2( -48, 9 )
+b = Vector2( 43, 10 )
+
+[sub_resource type="SegmentShape2D" id=19]
+
+custom_solver_bias = 0.0
+a = Vector2( 3, -38 )
+b = Vector2( 3, 50 )
+
+[sub_resource type="SegmentShape2D" id=20]
+
+custom_solver_bias = 0.0
+a = Vector2( -43, -2 )
+b = Vector2( 41, -2 )
+
+[sub_resource type="SegmentShape2D" id=21]
+
+custom_solver_bias = 0.0
+a = Vector2( 3, -43 )
+b = Vector2( 3, 36 )
+
+[sub_resource type="SegmentShape2D" id=22]
+
+custom_solver_bias = 0.0
+a = Vector2( 3, -38 )
+b = Vector2( 3, 10 )
+
+[sub_resource type="SegmentShape2D" id=23]
+
+custom_solver_bias = 0.0
+a = Vector2( -63, -3 )
+b = Vector2( 57, -3 )
+
+[sub_resource type="SegmentShape2D" id=24]
+
+custom_solver_bias = 0.0
+a = Vector2( -51, -2 )
+b = Vector2( 45, -2 )
+
+[sub_resource type="SegmentShape2D" id=25]
+
+custom_solver_bias = 0.0
+a = Vector2( -3, -42 )
+b = Vector2( -3, 52 )
+
+[sub_resource type="SegmentShape2D" id=26]
+
+custom_solver_bias = 0.0
+a = Vector2( -3, -32 )
+b = Vector2( -3, 23 )
+
+[sub_resource type="SegmentShape2D" id=27]
+
+custom_solver_bias = 0.0
+a = Vector2( -63, -3 )
+b = Vector2( 56, -3 )
+
+[node name="tileset" type="Node2D"]
+
+[node name="grama_te" type="Sprite" parent="." index="0"]
+
+editor/display_folded = true
+position = Vector2( 45, 45 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 90, 90 )
+_sections_unfolded = [ "Offset", "Region" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="grama_te" index="0"]
+
+input_pickable = false
+collision_layer = 3
+collision_mask = 3
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="grama_te/StaticBody2D" index="0"]
+
+shape = SubResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="grama_te/StaticBody2D" index="1"]
+
+shape = SubResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="grama_tm1" type="Sprite" parent="." index="1"]
+
+editor/display_folded = true
+position = Vector2( 135, 45 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 90, 0, 90, 90 )
+_sections_unfolded = [ "Offset", "Region", "Transform" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="grama_tm1" index="0"]
+
+input_pickable = false
+collision_layer = 3
+collision_mask = 3
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="grama_tm1/StaticBody2D" index="0"]
+
+position = Vector2( 0, 3 )
+shape = SubResource( 3 )
+
+[node name="grama_tm2" type="Sprite" parent="." index="2"]
+
+editor/display_folded = true
+position = Vector2( 225, 45 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 180, 0, 90, 90 )
+_sections_unfolded = [ "Offset", "Region", "Transform" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="grama_tm2" index="0"]
+
+input_pickable = false
+collision_layer = 3
+collision_mask = 3
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="grama_tm2/StaticBody2D" index="0"]
+
+position = Vector2( 0, 3 )
+shape = SubResource( 4 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="grama_td" type="Sprite" parent="." index="3"]
+
+editor/display_folded = true
+position = Vector2( 315, 45 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 270, 0, 90, 90 )
+_sections_unfolded = [ "Offset", "Region", "Transform" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="grama_td" index="0"]
+
+input_pickable = false
+collision_layer = 3
+collision_mask = 3
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="grama_td/StaticBody2D" index="0"]
+
+position = Vector2( -6, 3 )
+shape = SubResource( 5 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="grama_td/StaticBody2D" index="1"]
+
+shape = SubResource( 6 )
+
+[node name="pedra_te" type="Sprite" parent="." index="4"]
+
+editor/display_folded = true
+position = Vector2( 45, 135 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 90, 90, 90 )
+_sections_unfolded = [ "Offset", "Region", "Transform" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="pedra_te" index="0"]
+
+input_pickable = false
+collision_layer = 3
+collision_mask = 3
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="pedra_te/StaticBody2D" index="0"]
+
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="pedra_te/StaticBody2D" index="1"]
+
+shape = SubResource( 8 )
+
+[node name="pedra_tm" type="Sprite" parent="." index="5"]
+
+editor/display_folded = true
+position = Vector2( 135, 135 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 90, 90, 90, 90 )
+_sections_unfolded = [ "Offset", "Region", "Transform" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="pedra_tm" index="0"]
+
+input_pickable = false
+collision_layer = 3
+collision_mask = 3
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="pedra_tm/StaticBody2D" index="0"]
+
+shape = SubResource( 9 )
+
+[node name="pedra_td" type="Sprite" parent="." index="6"]
+
+editor/display_folded = true
+position = Vector2( 225, 135 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 180, 90, 90, 90 )
+_sections_unfolded = [ "Offset", "Region", "Transform" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="pedra_td" index="0"]
+
+input_pickable = false
+collision_layer = 3
+collision_mask = 3
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="pedra_td/StaticBody2D" index="0"]
+
+shape = SubResource( 10 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="pedra_td/StaticBody2D" index="1"]
+
+position = Vector2( -4, 0 )
+shape = SubResource( 11 )
+
+[node name="pedra_me" type="Sprite" parent="." index="7"]
+
+editor/display_folded = true
+position = Vector2( 45, 225 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 180, 90, 90 )
+_sections_unfolded = [ "Offset", "Region" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="pedra_me" index="0"]
+
+input_pickable = false
+collision_layer = 3
+collision_mask = 3
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="pedra_me/StaticBody2D" index="0"]
+
+position = Vector2( -34, -5 )
+shape = SubResource( 12 )
+
+[node name="pedra_mm" type="Sprite" parent="." index="8"]
+
+position = Vector2( 135, 225 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 90, 180, 90, 90 )
+_sections_unfolded = [ "Offset", "Region", "Transform" ]
+
+[node name="pedra_mm2" type="Sprite" parent="." index="9"]
+
+position = Vector2( 45, 405 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 360, 90, 90 )
+_sections_unfolded = [ "Offset", "Region", "Transform" ]
+
+[node name="pedra_mm3" type="Sprite" parent="." index="10"]
+
+position = Vector2( 135, 405 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 90, 360, 90, 90 )
+_sections_unfolded = [ "Offset", "Region", "Transform" ]
+
+[node name="pedra_mm4" type="Sprite" parent="." index="11"]
+
+position = Vector2( 225, 405 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 180, 360, 90, 90 )
+_sections_unfolded = [ "Offset", "Region", "Transform" ]
+
+[node name="pedra_md" type="Sprite" parent="." index="12"]
+
+editor/display_folded = true
+position = Vector2( 225, 225 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 180, 180, 90, 90 )
+_sections_unfolded = [ "Offset", "Region", "Transform" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="pedra_md" index="0"]
+
+input_pickable = false
+collision_layer = 3
+collision_mask = 3
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="pedra_md/StaticBody2D" index="0"]
+
+position = Vector2( 32, -5 )
+shape = SubResource( 13 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="pedra_be" type="Sprite" parent="." index="13"]
+
+editor/display_folded = true
+position = Vector2( 45, 315 )
+texture = SubResource( 14 )
+region_enabled = true
+region_rect = Rect2( 0, 270, 90, 90 )
+_sections_unfolded = [ "Offset", "Region" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="pedra_be" index="0"]
+
+input_pickable = false
+collision_layer = 3
+collision_mask = 3
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="pedra_be/StaticBody2D" index="0"]
+
+position = Vector2( -34, -11 )
+shape = SubResource( 15 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="pedra_be/StaticBody2D" index="1"]
+
+position = Vector2( -25, 38 )
+shape = SubResource( 16 )
+
+[node name="pedra_bm" type="Sprite" parent="." index="14"]
+
+editor/display_folded = true
+position = Vector2( 135, 315 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 90, 270, 90, 90 )
+_sections_unfolded = [ "Offset", "Region", "Transform" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="pedra_bm" index="0"]
+
+input_pickable = false
+collision_layer = 3
+collision_mask = 3
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="pedra_bm/StaticBody2D" index="0"]
+
+position = Vector2( 0, 30 )
+shape = SubResource( 17 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="pedra_bd" type="Sprite" parent="." index="15"]
+
+editor/display_folded = true
+position = Vector2( 225, 315 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 180, 270, 90, 90 )
+_sections_unfolded = [ "Offset", "Region", "Transform" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="pedra_bd" index="0"]
+
+input_pickable = false
+collision_layer = 3
+collision_mask = 3
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="pedra_bd/StaticBody2D" index="0"]
+
+position = Vector2( -9, 30 )
+shape = SubResource( 18 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="pedra_bd/StaticBody2D" index="1"]
+
+position = Vector2( 32, -11 )
+shape = SubResource( 19 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="grama_em_l1" type="Sprite" parent="." index="16"]
+
+editor/display_folded = true
+position = Vector2( 495, 225 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 270, 90, 90, 90 )
+_sections_unfolded = [ "Offset", "Region", "Transform" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="grama_em_l1" index="0"]
+
+input_pickable = false
+collision_layer = 3
+collision_mask = 3
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="grama_em_l1/StaticBody2D" index="0"]
+
+position = Vector2( -6, -30 )
+shape = SubResource( 20 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="grama_em_l1/StaticBody2D" index="1"]
+
+position = Vector2( 32, 12 )
+shape = SubResource( 21 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="grama_em_l2" type="Sprite" parent="." index="17"]
+
+editor/display_folded = true
+position = Vector2( 495, 315 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 270, 180, 90, 90 )
+_sections_unfolded = [ "Offset", "Region", "Transform" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="grama_em_l2" index="0"]
+
+input_pickable = false
+collision_layer = 3
+collision_mask = 3
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="grama_em_l2/StaticBody2D" index="0"]
+
+position = Vector2( 32, -11 )
+shape = SubResource( 22 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="grama_em_l3" type="Sprite" parent="." index="18"]
+
+editor/display_folded = true
+position = Vector2( 585, 315 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 360, 180, 90, 90 )
+_sections_unfolded = [ "Offset", "Region", "Transform" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="grama_em_l3" index="0"]
+
+input_pickable = false
+collision_layer = 3
+collision_mask = 3
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="grama_em_l3/StaticBody2D" index="0"]
+
+position = Vector2( 0, -29 )
+shape = SubResource( 23 )
+
+[node name="grama_em_l4" type="Sprite" parent="." index="19"]
+
+editor/display_folded = true
+position = Vector2( 405, 225 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 360, 270, 90, 90 )
+_sections_unfolded = [ "Offset", "Region", "Transform" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="grama_em_l4" index="0"]
+
+input_pickable = false
+collision_layer = 3
+collision_mask = 3
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="grama_em_l4/StaticBody2D" index="0"]
+
+position = Vector2( 12, -30 )
+shape = SubResource( 24 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="grama_em_l4/StaticBody2D" index="1"]
+
+position = Vector2( -36, 11 )
+shape = SubResource( 25 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="grama_em_l5" type="Sprite" parent="." index="20"]
+
+editor/display_folded = true
+position = Vector2( 405, 315 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 360, 360, 90, 90 )
+_sections_unfolded = [ "Offset", "Region", "Transform" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="grama_em_l5" index="0"]
+
+input_pickable = false
+collision_layer = 3
+collision_mask = 3
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="grama_em_l5/StaticBody2D" index="0"]
+
+position = Vector2( -36, -20 )
+shape = SubResource( 26 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="grama_em_l6" type="Sprite" parent="." index="21"]
+
+editor/display_folded = true
+position = Vector2( 315, 315 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 270, 360, 90, 90 )
+_sections_unfolded = [ "Offset", "Region", "Transform" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="grama_em_l6" index="0"]
+
+input_pickable = false
+collision_layer = 3
+collision_mask = 3
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="grama_em_l6/StaticBody2D" index="0"]
+
+position = Vector2( 5, -29 )
+shape = SubResource( 27 )
+
+

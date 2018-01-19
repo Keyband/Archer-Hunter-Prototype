@@ -1,0 +1,346 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Textures/tileset.png" type="Texture" id=1]
+
+[sub_resource type="RectangleShape2D" id=64]
+
+custom_solver_bias = 0.0
+extents = Vector2( 5, 45 )
+
+[sub_resource type="StreamTexture" id=66]
+
+load_path = "res://.import/tileset.png-640a0fc2441bef186ecfbbbdb75dce01.stex"
+
+[sub_resource type="RectangleShape2D" id=65]
+
+custom_solver_bias = 0.0
+extents = Vector2( 45, 4 )
+
+[node name="tileset" type="Node2D"]
+
+[node name="grama_te" type="Sprite" parent="." index="0"]
+
+editor/display_folded = true
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 90, 90 )
+_sections_unfolded = [ "Offset", "Region" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="grama_te" index="0"]
+
+position = Vector2( 45, 50 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="grama_te/StaticBody2D" index="0"]
+
+build_mode = 0
+polygon = PoolVector2Array( -38, 40, -39, -32, -33, -38, -24, -35, -8, -34, 6, -34, 15, -37, 21, -37, 34, -38, 44, -38, 45, 40 )
+
+[node name="grama_tm1" type="Sprite" parent="." index="1"]
+
+editor/display_folded = true
+position = Vector2( 90, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 90, 0, 90, 90 )
+_sections_unfolded = [ "Offset", "Region", "Transform" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="grama_tm1" index="0"]
+
+position = Vector2( 45, 50 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="grama_tm1/StaticBody2D" index="0"]
+
+build_mode = 0
+polygon = PoolVector2Array( -45, 40, -45, -32, -45, -38, -27, -37, -11, -36, 5, -35, 14, -37, 23, -39, 32, -38, 45, -37, 45, 40 )
+
+[node name="grama_tm2" type="Sprite" parent="." index="2"]
+
+editor/display_folded = true
+position = Vector2( 180, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 180, 0, 90, 90 )
+_sections_unfolded = [ "Offset", "Region", "Transform" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="grama_tm2" index="0"]
+
+position = Vector2( 45, 50 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="grama_tm2/StaticBody2D" index="0"]
+
+build_mode = 0
+polygon = PoolVector2Array( -45, 40, -45, -37, -32, -38, -22, -36, -11, -37, 3, -35, 14, -36, 29, -35, 45, -37, 45, 40 )
+
+[node name="grama_td" type="Sprite" parent="." index="3"]
+
+editor/display_folded = true
+position = Vector2( 270, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 270, 0, 90, 90 )
+_sections_unfolded = [ "Offset", "Region", "Transform" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="grama_td" index="0"]
+
+position = Vector2( 45, 50 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="grama_td/StaticBody2D" index="0"]
+
+build_mode = 0
+polygon = PoolVector2Array( -45, 40, -45, -37, -32, -39, -22, -39, -11, -37, 2, -37, 13, -37, 26, -37, 37, -38, 37, 40 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="pedra_te" type="Sprite" parent="." index="4"]
+
+editor/display_folded = true
+position = Vector2( 0, 90 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 90, 90, 90 )
+_sections_unfolded = [ "Offset", "Region", "Transform" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="pedra_te" index="0"]
+
+position = Vector2( 45, 50 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="pedra_te/StaticBody2D" index="0"]
+
+build_mode = 0
+polygon = PoolVector2Array( -38, 40, -39, -32, -31, -44, -22, -45, -11, -40, 3, -41, 14, -43, 35, -43, 45, -43, 45, 40 )
+
+[node name="pedra_tm" type="Sprite" parent="." index="5"]
+
+editor/display_folded = true
+position = Vector2( 90, 90 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 90, 90, 90, 90 )
+_sections_unfolded = [ "Offset", "Region", "Transform" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="pedra_tm" index="0"]
+
+position = Vector2( 45, 50 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="pedra_tm/StaticBody2D" index="0"]
+
+build_mode = 0
+polygon = PoolVector2Array( -45, 40, -45, -32, -45, -38, -27, -37, -11, -36, 5, -35, 14, -37, 23, -39, 32, -38, 45, -37, 45, 40 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="pedra_td" type="Sprite" parent="." index="6"]
+
+editor/display_folded = true
+position = Vector2( 180, 90 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 180, 90, 90, 90 )
+_sections_unfolded = [ "Offset", "Region", "Transform" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="pedra_td" index="0"]
+
+position = Vector2( 45, 50 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="pedra_td/StaticBody2D" index="0"]
+
+build_mode = 0
+polygon = PoolVector2Array( -45, 40, -45, -37, -32, -39, -22, -39, -11, -37, 2, -37, 13, -37, 26, -37, 37, -38, 37, 40 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="pedra_me" type="Sprite" parent="." index="7"]
+
+editor/display_folded = true
+position = Vector2( 0, 180 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 180, 90, 90 )
+_sections_unfolded = [ "Offset", "Region" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="pedra_me" index="0"]
+
+position = Vector2( 45, 50 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="pedra_me/StaticBody2D" index="0"]
+
+position = Vector2( -34, -5 )
+shape = SubResource( 64 )
+
+[node name="pedra_mm" type="Sprite" parent="." index="8"]
+
+position = Vector2( 90, 180 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 90, 180, 90, 90 )
+_sections_unfolded = [ "Offset", "Region", "Transform" ]
+
+[node name="pedra_md" type="Sprite" parent="." index="9"]
+
+editor/display_folded = true
+position = Vector2( 180, 180 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 180, 180, 90, 90 )
+_sections_unfolded = [ "Offset", "Region", "Transform" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="pedra_md" index="0"]
+
+position = Vector2( 45, 50 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="pedra_md/StaticBody2D" index="0"]
+
+position = Vector2( 32, -5 )
+shape = SubResource( 64 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="pedra_be" type="Sprite" parent="." index="10"]
+
+editor/display_folded = true
+position = Vector2( 0, 270 )
+texture = SubResource( 66 )
+region_enabled = true
+region_rect = Rect2( 0, 270, 90, 90 )
+_sections_unfolded = [ "Offset", "Region" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="pedra_be" index="0"]
+
+position = Vector2( 45, 50 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="pedra_be/StaticBody2D" index="0"]
+
+position = Vector2( -34, -11 )
+shape = SubResource( 64 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="pedra_be/StaticBody2D" index="1"]
+
+position = Vector2( 6, 30 )
+shape = SubResource( 65 )
+
+[node name="pedra_bm" type="Sprite" parent="." index="11"]
+
+editor/display_folded = true
+position = Vector2( 90, 270 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 90, 270, 90, 90 )
+_sections_unfolded = [ "Offset", "Region", "Transform" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="pedra_bm" index="0"]
+
+position = Vector2( 45, 50 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="pedra_bm/StaticBody2D" index="0"]
+
+position = Vector2( 0, 30 )
+shape = SubResource( 65 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="pedra_bd" type="Sprite" parent="." index="12"]
+
+editor/display_folded = true
+position = Vector2( 180, 270 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 180, 270, 90, 90 )
+_sections_unfolded = [ "Offset", "Region", "Transform" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="pedra_bd" index="0"]
+
+position = Vector2( 45, 50 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="pedra_bd/StaticBody2D" index="0"]
+
+position = Vector2( -9, 30 )
+shape = SubResource( 65 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="pedra_bd/StaticBody2D" index="1"]
+
+position = Vector2( 32, -11 )
+shape = SubResource( 64 )
+_sections_unfolded = [ "Transform" ]
+
+
